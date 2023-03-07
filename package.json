@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon index.js",
-    "dev":"nodemon index.js"
+    "start": "node ./source/index.js",
+    "dev":"nodemon ./source/index.js"
   },
   "author": "Kevin Luciano",
   "license": "ISC",
@@ -17,6 +17,6 @@
     "cors": "^2.8.5",
     "dotenv": "^16.0.3",
     "express": "^4.18.2",
-    "mongoose": "^6.8.3"
+    "mongoose": "^6.9.0"
   }
 }
