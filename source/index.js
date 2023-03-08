@@ -18,12 +18,12 @@ app.get("/", (req, res) => {
 });
 
 //Rutas de la API
-app.use("/api/jugadores", require("./src/routes/jugadores.routes"));
+app.use("/api/jugadores", require("./routes/jugadores.routes"));
 
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`);
 });
 
-const{dbConnection }= require("./src/database/config");
+const{dbConnection }= require("./database/config");
 
 dbConnection();
